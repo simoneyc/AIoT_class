@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data Visualization</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+    <script>
+        var chart;
+
+        function fetchDataAndPlot() {
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    var humidityData = [];
+                    var temperatureData = [];
+                    data.reverse(); // Reverse data to display in chronological order
+                    data.forEach(entry => {
+                        humidityData.push(entry[0]);
+                        temperatureData.push(entry[1]);
+                    });
+
+                    if (!chart) {
+                        chart = Highcharts.chart('container', {
+                            chart: {
+                                type: 'line'
+                            },
+                            title: {
+                                text: 'Humidity and Temperature Data'
+                            },
+                            xAxis: {
+                                categories: Array.from({ length: data.length }, (_, i) => i + 1).reverse()
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Value'
+                                }
+                            },
+                            series: [{
+                                name: 'Humidity',
+                                data: humidityData,
+                                color: '#33CEFF' // Change color here
+                            }, {
+                                name: 'Temperature',
+                                data: temperatureData,
+                                color: 'yellow' // Change color here
+                            }]
+                        });
+                    } else {
+                        chart.series[0].setData(humidityData);
+                        chart.series[1].setData(temperatureData);
+                        chart.xAxis[0].setCategories(Array.from({ length: data.length }, (_, i) => i + 1).reverse());
+                    }
+                });
+        }
+
+        setInterval(fetchDataAndPlot, 2000); // Fetch data every two seconds
+        fetchDataAndPlot(); // Fetch data initially
+    </script>
+</body>
+</html>
