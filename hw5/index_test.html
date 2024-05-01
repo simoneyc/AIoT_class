@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Chart</title>
+  <!-- 引入Highcharts庫 -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+<body>
+
+<!-- 下拉式選單 -->
+<select id="regionSelect">
+  <option value="北部地區">北部地區</option>
+  <option value="中部地區">中部地區</option>
+  <option value="南部地區">南部地區</option>
+  <option value="東北部地區">東北部地區</option>
+  <option value="東部地區">東部地區</option>
+  <option value="東南部地區">東南部地區</option>
+</select>
+
+<!-- 圖表容器 -->
+<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+
+<script>
+// 資料
+var data = {
+  "北部地區": [
+    { "date": "2024-04-23", "maxTemp": 29, "minTemp": 23 },
+    { "date": "2024-04-24", "maxTemp": 26, "minTemp": 22 },
+    { "date": "2024-04-25", "maxTemp": 27, "minTemp": 21 },
+    { "date": "2024-04-26", "maxTemp": 28, "minTemp": 22 },
+    { "date": "2024-04-27", "maxTemp": 29, "minTemp": 23 },
+    { "date": "2024-04-28", "maxTemp": 29, "minTemp": 22 },
+    { "date": "2024-04-29", "maxTemp": 29, "minTemp": 23 }
+  ],
+  // 其他區域的資料...
+};
+
+// 預設選擇的區域
+var selectedRegion = "北部地區";
+
+// 創建圖表
+var chart = Highcharts.chart('chartContainer', {
+  title: {
+    text: 'Temperature Chart'
+  },
+  xAxis: {
+    categories: data[selectedRegion].map(function(item) {
+      return item.date;
+    })
+  },
+  yAxis: {
+    title: {
+      text: 'Temperature (°C)'
+    }
+  },
+  series: [{
+    name: 'Max Temperature',
+    data: data[selectedRegion].map(function(item) {
+      return item.maxTemp;
+    })
+  }, {
+    name: 'Min Temperature',
+    data: data[selectedRegion].map(function(item) {
+      return item.minTemp;
+    })
+  }]
+});
+
+// 監聽下拉式選單的變化
+document.getElementById('regionSelect').addEventListener('change', function() {
+  selectedRegion = this.value;
+  updateChart(selectedRegion);
+});
+
+// 更新圖表
+function updateChart(region) {
+  chart.xAxis[0].setCategories(data[region].map(function(item) {
+    return item.date;
+  }));
+  chart.series[0].update({
+    data: data[region].map(function(item) {
+      return item.maxTemp;
+    })
+  });
+  chart.series[1].update({
+    data: data[region].map(function(item) {
+      return item.minTemp;
+    })
+  });
+}
+</script>
+
+</body>
+</html>

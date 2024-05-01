@@ -1,0 +1,1134 @@
+{
+ "cwaopendata": {
+  "@xmlns": "urn:cwa:gov:tw:cwacommon:0.1",
+  "identifier": "472c7047-eb48-4aa1-8fc0-9be46a234889",
+  "datasetName": "一週農業氣象預報",
+  "dataid": "F-A0010-001",
+  "sender": "shchiang@cwa.gov.tw",
+  "sent": "2024-04-22T18:15:02+08:00",
+  "status": "Actual",
+  "scope": "Public",
+  "msgType": "Issue",
+  "resources": {
+   "resource": {
+    "metadata": {
+     "resourceName": "中央氣象署氣候服務_農業氣象一週預報",
+     "resourceDescription": "提供氣象署預報資料和農事建議，供農業相關單位及農民參考",
+     "language": "zh",
+     "homepage": "https://www.cwa.gov.tw/V8/C/L/agriculture.html",
+     "sources": {
+      "source": [
+       {
+        "title": "1週預報",
+        "path": "https://www.cwa.gov.tw/V8/C/W/week.html"
+       },
+       {
+        "title": "長期天氣預報-季長期天氣展望",
+        "path": "https://www.cwa.gov.tw/Data/fcst_pdf/FW15.pdf"
+       }
+      ]
+     },
+     "temporal": {
+      "issueTime": "2024-04-22T17:00:00+08:00",
+      "validTime": {
+       "startTime": "2024-04-23T00:00:00+08:00",
+       "endTime": "2024-04-30T00:00:00+08:00"
+      }
+     },
+     "weatherElements": {
+      "weatherElement": [
+       {
+        "tagName": "weather",
+        "description": "天氣描述"
+       },
+       {
+        "tagName": "temperature",
+        "description": "氣溫",
+        "units": "˚C"
+       },
+       {
+        "tagName": "agrWeatherForecasts",
+        "description": "一週農業天氣預報"
+       },
+       {
+        "tagName": "weatherProfile",
+        "description": "天氣概況"
+       },
+       {
+        "tagName": "weatherForecasts",
+        "description": "天氣預報"
+       },
+       {
+        "tagName": "agrAdvices",
+        "description": "農事建議"
+       },
+       {
+        "tagName": "degreeDay",
+        "description": "度日(植物發育時所需之有效溫度單位)",
+        "units": "GDD"
+       },
+       {
+        "tagName": "accumulatedTemperature",
+        "description": "積溫(植物發育過程中，當各生育階段有效溫度累積至一定數值時，即可完成發育。該數值即稱為此一發育階段所需的積溫。)"
+       },
+       {
+        "tagName": "cardinalTemperatures",
+        "description": "作物生長溫度區間",
+        "units": "˚C",
+        "statisticalMethods": {
+         "statisticalMethod": [
+          {
+           "methodTagName": "minimum",
+           "description": "生長最低溫"
+          },
+          {
+           "methodTagName": "maximum",
+           "description": "生長最高溫"
+          },
+          {
+           "methodTagName": "optimum",
+           "description": "生長最適溫"
+          }
+         ]
+        }
+       },
+       {
+        "tagName": "growingDays",
+        "description": "生育日數"
+       },
+       {
+        "tagName": "cropStatistics",
+        "description": "農業積溫統計"
+       }
+      ]
+     }
+    },
+    "data": {
+     "agrWeatherForecasts": {
+      "weatherProfile": "23日鋒面影響,24日鋒面通過,易有短延時強降雨,西半部及東北部地區有短暫陣雨或雷雨,西半部地區有局部大雨,東北部地區有局部較大雨勢發生的機率,其他地區亦有局部短暫陣雨或雷雨。25日另一鋒面接近,26日至28日鋒面影響,易有短延時強降雨,西半部及東北部地區有短暫陣雨或雷雨,西半部地區有局部大雨,東北部地區有局部較大雨勢發生的機率,其他地區亦有局部短暫陣雨或雷雨。29日中部以北、東北部及東部地區仍有局部短暫陣雨,其他地區為多雲,午後有局部短暫雷陣雨。23日東南部地區有焚風發生的機率,請注意。",
+      "weatherForecasts": {
+       "location": [
+        {
+         "locationName": "北部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "多雲短暫陣雨或雷雨",
+             "weatherid": "15"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "多雲短暫陣雨",
+             "weatherid": "8"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "26"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "27"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "29"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "22"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "21"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "22"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "22"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "23"
+            }
+           ]
+          }
+         }
+        },
+        {
+         "locationName": "中部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "多雲短暫陣雨",
+             "weatherid": "8"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "31"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "30"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "31"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "31"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "23"
+            }
+           ]
+          }
+         }
+        },
+        {
+         "locationName": "南部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "多雲短暫陣雨或雷雨",
+             "weatherid": "15"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "多雲",
+             "weatherid": "4"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "34"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "32"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "31"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "31"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "32"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "33"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "25"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "25"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "24"
+            }
+           ]
+          }
+         }
+        },
+        {
+         "locationName": "東北部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "多雲時陰短暫陣雨",
+             "weatherid": "9"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "26"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "26"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "28"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "22"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "21"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "24"
+            }
+           ]
+          }
+         }
+        },
+        {
+         "locationName": "東部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "陰時多雲短暫陣雨",
+             "weatherid": "10"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "27"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "30"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "25"
+            }
+           ]
+          }
+         }
+        },
+        {
+         "locationName": "東南部地區",
+         "weatherElements": {
+          "Wx": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "weather": "多雲時陰",
+             "weatherid": "5"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "weather": "陰短暫陣雨或雷雨",
+             "weatherid": "18"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "weather": "陰時多雲短暫陣雨或雷雨",
+             "weatherid": "17"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "weather": "多雲時陰短暫陣雨或雷雨",
+             "weatherid": "16"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "weather": "多雲",
+             "weatherid": "4"
+            }
+           ]
+          },
+          "MaxT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "33"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "29"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "28"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "31"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "30"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "30"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "31"
+            }
+           ]
+          },
+          "MinT": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "temperature": "23"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "temperature": "24"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "temperature": "24"
+            }
+           ]
+          }
+         }
+        }
+       ]
+      },
+      "agrAdvices": {
+       "agrForecasts": {
+        "location": [
+         {
+          "locationName": "北部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "16.0"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "14.0",
+             "accumulatedTemperature": "30.0"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "14.0",
+             "accumulatedTemperature": "44.0"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "15.0",
+             "accumulatedTemperature": "59.0"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "75.0"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "90.5"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "106.5"
+            }
+           ]
+          }
+         },
+         {
+          "locationName": "中部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "17.0",
+             "accumulatedTemperature": "17.0"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "33.0"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "49.0"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "65.0"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "16.5",
+             "accumulatedTemperature": "81.5"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "17.0",
+             "accumulatedTemperature": "98.5"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "17.0",
+             "accumulatedTemperature": "115.5"
+            }
+           ]
+          }
+         },
+         {
+          "locationName": "南部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "19.5",
+             "accumulatedTemperature": "19.5"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "18.5",
+             "accumulatedTemperature": "38.0"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "17.5",
+             "accumulatedTemperature": "55.5"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "17.5",
+             "accumulatedTemperature": "73.0"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "16.5",
+             "accumulatedTemperature": "89.5"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "18.0",
+             "accumulatedTemperature": "107.5"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "18.5",
+             "accumulatedTemperature": "126.0"
+            }
+           ]
+          }
+         },
+         {
+          "locationName": "東北部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "15.5"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "14.0",
+             "accumulatedTemperature": "29.5"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "13.5",
+             "accumulatedTemperature": "43.0"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "58.5"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "74.0"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "89.5"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "105.5"
+            }
+           ]
+          }
+         },
+         {
+          "locationName": "東部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "16.5",
+             "accumulatedTemperature": "16.5"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "32.5"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "15.0",
+             "accumulatedTemperature": "47.5"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "63.5"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "16.0",
+             "accumulatedTemperature": "79.5"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "16.5",
+             "accumulatedTemperature": "96.0"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "17.5",
+             "accumulatedTemperature": "113.5"
+            }
+           ]
+          }
+         },
+         {
+          "locationName": "東南部地區",
+          "weatherElements": {
+           "daily": [
+            {
+             "dataDate": "2024-04-23",
+             "degreeDay": "18.5",
+             "accumulatedTemperature": "18.5"
+            },
+            {
+             "dataDate": "2024-04-24",
+             "degreeDay": "16.5",
+             "accumulatedTemperature": "35.0"
+            },
+            {
+             "dataDate": "2024-04-25",
+             "degreeDay": "15.5",
+             "accumulatedTemperature": "50.5"
+            },
+            {
+             "dataDate": "2024-04-26",
+             "degreeDay": "17.5",
+             "accumulatedTemperature": "68.0"
+            },
+            {
+             "dataDate": "2024-04-27",
+             "degreeDay": "17.0",
+             "accumulatedTemperature": "85.0"
+            },
+            {
+             "dataDate": "2024-04-28",
+             "degreeDay": "17.0",
+             "accumulatedTemperature": "102.0"
+            },
+            {
+             "dataDate": "2024-04-29",
+             "degreeDay": "17.5",
+             "accumulatedTemperature": "119.5"
+            }
+           ]
+          }
+         }
+        ]
+       },
+       "cropStatistics": {
+        "crop": {
+         "cropName": "水稻",
+         "cardinalTemperatures": {
+          "growingStage": {
+           "description": "稻作生長溫度",
+           "minimum": "10",
+           "maximum": "40"
+          }
+         },
+         "location": [
+          {
+           "locationName": "臺中地區",
+           "cropBreed": "臺農67號",
+           "statistics": {
+            "fifteenYears": {
+             "description": "一期稻作生育日數及生育期總積溫(15年平均值)",
+             "timePeriod": [
+              {
+               "description": "插秧至抽穗",
+               "growingDays": "83",
+               "accumulatedTemperature": "1067.71"
+              },
+              {
+               "description": "插秧至收穫",
+               "growingDays": "121",
+               "accumulatedTemperature": "1744.07"
+              }
+             ]
+            },
+            "thisYear": {
+             "description": "113年一期稻作積溫值 (各改良場豐歉試驗臺農67號)",
+             "dibblingDate": "2024-02-25",
+             "timePeriod": {
+              "description": "插秧至本日",
+              "startDate": "2024-02-25",
+              "endDate": "2024-04-21",
+              "growingDays": "57",
+              "accumulatedTemperature": "743.65"
+             }
+            }
+           }
+          },
+          {
+           "locationName": "高雄地區",
+           "cropBreed": "臺農67號",
+           "statistics": {
+            "fifteenYears": {
+             "description": "一期稻作生育日數及生育期總積溫(15年平均值)",
+             "timePeriod": [
+              {
+               "description": "插秧至抽穗",
+               "growingDays": "93",
+               "accumulatedTemperature": "1155.48"
+              },
+              {
+               "description": "插秧至收穫",
+               "growingDays": "124",
+               "accumulatedTemperature": "1699.05"
+              }
+             ]
+            },
+            "thisYear": {
+             "description": "113年一期稻作積溫值 (各改良場豐歉試驗臺農67號)",
+             "dibblingDate": "2024-01-09",
+             "timePeriod": {
+              "description": "插秧至本日",
+              "startDate": "2024-01-09",
+              "endDate": "2024-04-21",
+              "growingDays": "104",
+              "accumulatedTemperature": "1453.7"
+             }
+            }
+           }
+          },
+          {
+           "locationName": "花蓮地區",
+           "cropBreed": "臺農67號",
+           "statistics": {
+            "fifteenYears": {
+             "description": "一期稻作生育日數及生育期總積溫(15年平均值)",
+             "timePeriod": [
+              {
+               "description": "插秧至抽穗",
+               "growingDays": "98",
+               "accumulatedTemperature": "1090.23"
+              },
+              {
+               "description": "插秧至收穫",
+               "growingDays": "136",
+               "accumulatedTemperature": "1697.62"
+              }
+             ]
+            },
+            "thisYear": {
+             "description": "113年一期稻作積溫值 (各改良場豐歉試驗臺農67號)",
+             "dibblingDate": "2024-01-29",
+             "timePeriod": {
+              "description": "插秧至本日",
+              "startDate": "2024-01-29",
+              "endDate": "2024-04-21",
+              "growingDays": "84",
+              "accumulatedTemperature": "926.65"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

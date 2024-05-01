@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Chart</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body style="text-align: center;">
+    <h1>Weather Chart</h1>
+    <label for="region">Select Region:</label>
+    <select id="region">
+        {% for region in regions %}
+            <option value="{{ region }}">{{ region }}</option>
+        {% endfor %}
+    </select>
+
+    <div id="chartContainer" style="width: 80%; margin: 0 auto;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var regionSelect = document.getElementById('region');
+            var chartContainer = document.getElementById('chartContainer');
+
+            regionSelect.addEventListener('change', function () {
+                var selectedRegion = regionSelect.value;
+                fetch('/get_chart_data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({ region: selectedRegion })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var chartData = {
+                        chart: {
+                            type: 'line'
+                        },
+                        title: {
+                            text: 'Weather Chart'
+                        },
+                        xAxis: {
+                            categories: data.dates
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Temperature (°C)'
+                            }
+                        },
+                        series: [{
+                            name: 'Max Temperature',
+                            data: data.maxTemps
+                        }, {
+                            name: 'Min Temperature',
+                            data: data.minTemps
+                        }]
+                    };
+
+                    Highcharts.chart(chartContainer, chartData);
+                })
+                .catch(error => console.error('Error:', error));
+            });
+
+            // Trigger initial chart rendering
+            regionSelect.dispatchEvent(new Event('change'));
+        });
+    </script>
+</body>
+</html>
