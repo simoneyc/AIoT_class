@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Collection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <!-- header.html -->
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h1>Welcome</h1>
+        <h2>~AIOT HW~</h2>
+        <p>Monitor temperature and humidity with our sensor data collection system.</p>
+        <div>
+            <a href="/visualize-realtime" class="button home-a1" style="background: #000000">View <b
+                    style="color: #2ddcfff0">real-time</b> Data</a>
+            <a href="/visualize-specifiedtime" class="button home-a2" style="background: #000000">View <b
+                    style="color: 	#ffa735">specific-time</b> Data</a>
+        </div>
+
+    </div>
+
+    <!-- footer.html -->
+    {% include 'footer.html' %}
+
+</body>
+
+</html>

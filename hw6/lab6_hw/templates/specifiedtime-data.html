@@ -1,0 +1,38 @@
+<!-- data.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <!-- header.html -->
+    {% include 'header.html' %}
+
+    <script src="/static/script_specifiedtime.js"></script>
+
+    <div class="container">
+        <h1>Data Visualization</h1>
+        <div class="datetime-inputs">
+            <label for="startDateTime">Start Date and Time:</label>
+            <input type="datetime-local" id="startDateTime" name="startDateTime">
+            <label for="endDateTime">End Date and Time:</label>
+            <input type="datetime-local" id="endDateTime" name="endDateTime">
+            <button id="fetchDataBtn">Fetch Data</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="dataChart"></canvas>
+        </div>
+    </div>
+
+    <!-- footer.html -->
+    {% include 'footer.html' %}
+
+</body>
+
+</html>

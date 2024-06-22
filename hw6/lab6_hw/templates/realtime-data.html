@@ -1,0 +1,34 @@
+<!-- realtime-data.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <!-- header.html -->
+    {% include 'header.html' %}
+
+    <script src="/static/script_realtime.js"></script>
+
+    <div class="container">
+        <h1>Data Visualization</h1>
+
+        <div class="chart-container">
+            <canvas id="dataChart"></canvas>
+        </div>
+        <button id="fetchAutoDataBtn">If it does not update automatically, please click</button>
+    </div>
+
+
+    <!-- footer.html -->
+    {% include 'footer.html' %}
+
+</body>
+
+</html>
