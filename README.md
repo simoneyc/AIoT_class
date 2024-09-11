@@ -1,4 +1,4 @@
 # AIoT_class
 
-* 老師超愛chatGPT
-* 不易聽懂作業內容
+## 老師要求作業必須要使用chatGPT
+
