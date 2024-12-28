@@ -7,6 +7,7 @@ The teacher requires the homework to be completed using ChatGPT.
 
 # LINE Bot for Travel Recommendations - project
 ***I am in Taichung***
+<img align="right" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmQwcWVuaWZzZWh5NTlkZ3JmdWZ4N3JrejgxMWh0dnM4dXhhbDVrZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tLD6dLlYKHMJFX75k4/giphy.gif" width="100"/>
 
 A project designed to assist users in exploring Taichung's attractions, food, and snacks with LINE Bot integration and data scraping.
 
