@@ -5,7 +5,7 @@
 The teacher requires the homework to be completed using ChatGPT.
 
 
-# LINE Bot for Travel Recommendations
+# LINE Bot for Travel Recommendations - project
 ***I am in Taichung***
 
 A project designed to assist users in exploring Taichung's attractions, food, and snacks with LINE Bot integration and data scraping.
@@ -19,10 +19,11 @@ A project designed to assist users in exploring Taichung's attractions, food, an
 ## Project Structure
 
 ```
-.
-├── scrapying.py    # Scrapes data from the travel website and saves it as a CSV file
-├── app.py          # Implements the LINE Bot server with Flask
-├── db_csv.py       # Imports CSV data into MongoDB
+project
+   ├── code
+        ├── scrapying.py    # Scrapes data from the travel website and saves it as a CSV file
+        ├── app.py          # Implements the LINE Bot server with Flask
+        ├── db_csv.py       # Imports CSV data into MongoDB
 ```
 
 ## Requirements
@@ -81,5 +82,3 @@ python app.py
 
 - Taichung Travel Website: [Source of data](https://travel.taichung.gov.tw/).
 
----
-Happy exploring Taichung!
